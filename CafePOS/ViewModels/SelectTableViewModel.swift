@@ -1,8 +1,8 @@
 //
-//  TablesListViewModel.swift
+//  SelectTableViewModel.swift
 //  CafePOS
 //
-//  Created by Phuc Le Dien on 11/17/18.
+//  Created by Phuc Le Dien on 11/18/18.
 //  Copyright © 2018 Dwarvesv. All rights reserved.
 //
 
@@ -11,32 +11,31 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-protocol TablesListViewModelInputs {
-    
-    /// Call when text search changed
+protocol SelectTableViewModelInputs {
+    /// Call when search text changed
     func set(filter: String)
     
     /// Call when view did load
     func viewDidLoad()
 }
 
-protocol TablesListViewModelOuputs {
+protocol SelectTableViewModelOuputs {
     // {Alphabetized list of output signals with documentation}
     
     /// Emit fetch data success or not
     func fetchData() -> Observable<Void>
     
     /// Emit the filtered tables
-    var filteredTables: BehaviorRelay<[TablesListSection]> {get}
+    var filteredTables: BehaviorRelay<[SelectTableSection]> {get}    
+}
+
+protocol SelectTableViewModelType {
+    var inputs: SelectTableViewModelInputs { get }
+    var outputs: SelectTableViewModelOuputs { get }
+}
+
+class SelectTableViewModel: SelectTableViewModelType, SelectTableViewModelInputs, SelectTableViewModelOuputs {
     
-}
-
-protocol TablesListViewModelType {
-    var inputs: TablesListViewModelInputs { get }
-    var outputs: TablesListViewModelOuputs { get }
-}
-
-class TablesListViewModel: TablesListViewModelType, TablesListViewModelInputs, TablesListViewModelOuputs {
     // MARK : - Inputs
     func set(filter: String) {
         self.filter.accept(filter)
@@ -48,24 +47,23 @@ class TablesListViewModel: TablesListViewModelType, TablesListViewModelInputs, T
     
     // MARK : - Outputs
     func fetchData() -> Observable<Void> {
-        return NetworkAdapter.getTables()
+        return NetworkAdapter.getEmptyTables()
             .do(onNext: { [weak self] tables in
                 guard let strongSelf = self else {return}
                 strongSelf.tables.accept(tables)
             })
-            .map { _ in return Observable.of(()) }
+            .map { _ in return }
     }
     
-    var filteredTables: BehaviorRelay<[TablesListSection]> = BehaviorRelay(value: [])
+    var filteredTables: BehaviorRelay<[SelectTableSection]> = BehaviorRelay(value: [])
     
     // MARK:- Other methods
-    func createSection(withTables: [Table]) -> [TablesListSection] {
+    func createSection(withTables: [Table]) -> [SelectTableSection] {
         let items = withTables.map { table in
-            return TablesListCellItem(id: table.id, name: table.name, payment: "\(table.payment)đ", status: table.status)
+            return SelectTableCellItem(id: table.id, name: table.name)
         }
-        return [TablesListSection(items: items)]
+        return [SelectTableSection(items: items)]
     }
-    
     
     func applyFilter() {
         Observable.combineLatest(filter, tables)
@@ -87,47 +85,29 @@ class TablesListViewModel: TablesListViewModelType, TablesListViewModelInputs, T
     var tables: BehaviorRelay<[Table]> = BehaviorRelay(value: [])
     
     // {Declaration of inputs/outputs}
-    var inputs: TablesListViewModelInputs { return self }
-    var outputs: TablesListViewModelOuputs { return self }
+    var inputs: SelectTableViewModelInputs { return self }
+    var outputs: SelectTableViewModelOuputs { return self }
 }
 
 // RxDatasource adapter
 
-enum TableStatus {
-    case Empty
-    case Ordered
-    case Prepared
-}
-
-struct TablesListCellItem {
+struct SelectTableCellItem {
     var id: String
     var name: String
-    var payment: String
-    var status: TableStatus
 }
 
-extension TablesListCellItem: IdentifiableType {
-    typealias Identity = String
-    
-    var identity: String { return id }
-}
-
-extension TablesListCellItem: Equatable {}
-
-struct TablesListSection {
+struct SelectTableSection {
     var items: [Item]
 }
 
-extension TablesListSection: AnimatableSectionModelType {
+extension SelectTableSection: SectionModelType {
+    typealias Item = SelectTableCellItem
     
-    typealias Identity = String
-    
-    typealias Item = TablesListCellItem
-    
-    var identity: Identity { return ""}
-    
-    init(original: TablesListSection, items: [Item]) {
+    init(original: SelectTableSection, items: [Item]) {
         self = original
         self.items = items
     }
 }
+
+
+
