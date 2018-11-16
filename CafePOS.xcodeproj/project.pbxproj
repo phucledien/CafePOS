@@ -8,6 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		08D80719811D21BD16E922F4 /* Pods_CafePOSDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1AB3D2BDC16E3102C5282B /* Pods_CafePOSDev.framework */; };
+		3C06582621A1DFBF0097D1BB /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06582521A1DFBF0097D1BB /* IntrinsicTableView.swift */; };
+		3C06582721A1DFBF0097D1BB /* IntrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06582521A1DFBF0097D1BB /* IntrinsicTableView.swift */; };
+		3C06D21521CFFF07005FD16A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06D21421CFFF07005FD16A /* LoginViewController.swift */; };
+		3C06D21621CFFF07005FD16A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06D21421CFFF07005FD16A /* LoginViewController.swift */; };
+		3C2C711A21D09472003D439D /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C711921D09472003D439D /* OrderDetailViewController.swift */; };
+		3C2C711B21D09472003D439D /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C711921D09472003D439D /* OrderDetailViewController.swift */; };
+		3C2C711D21D09855003D439D /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C711C21D09855003D439D /* OrderDetailViewModel.swift */; };
+		3C2C711E21D09855003D439D /* OrderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C711C21D09855003D439D /* OrderDetailViewModel.swift */; };
+		3C2C712021D0A85B003D439D /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C711F21D0A85B003D439D /* OrderDetail.swift */; };
+		3C2C712121D0A85B003D439D /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C711F21D0A85B003D439D /* OrderDetail.swift */; };
+		3C2C712321D0A9A2003D439D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C712221D0A9A2003D439D /* Order.swift */; };
+		3C2C712421D0A9A2003D439D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C712221D0A9A2003D439D /* Order.swift */; };
+		3C2C712621D0D542003D439D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C712521D0D542003D439D /* TableViewController.swift */; };
+		3C2C712721D0D542003D439D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C712521D0D542003D439D /* TableViewController.swift */; };
+		3C2C712921D0D54F003D439D /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C712821D0D54F003D439D /* TableViewModel.swift */; };
+		3C2C712A21D0D54F003D439D /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C712821D0D54F003D439D /* TableViewModel.swift */; };
+		3C2C712C21D16107003D439D /* RequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C712B21D16107003D439D /* RequestStatus.swift */; };
+		3C2C712D21D16107003D439D /* RequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C712B21D16107003D439D /* RequestStatus.swift */; };
+		3C2C712F21D17D5D003D439D /* EmptyPrepareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C712E21D17D5D003D439D /* EmptyPrepareView.xib */; };
+		3C2C713021D17D5D003D439D /* EmptyPrepareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C712E21D17D5D003D439D /* EmptyPrepareView.xib */; };
+		3C3197E521A2A6EE00C3DF86 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3197E421A2A6EE00C3DF86 /* OrderTableViewCell.swift */; };
+		3C3197E621A2A6EE00C3DF86 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3197E421A2A6EE00C3DF86 /* OrderTableViewCell.swift */; };
+		3C8111EF21A1533B0000FA73 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111EE21A1533B0000FA73 /* CreateOrderViewController.swift */; };
+		3C8111F021A1533B0000FA73 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111EE21A1533B0000FA73 /* CreateOrderViewController.swift */; };
+		3C8111F221A153480000FA73 /* CreateOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111F121A153480000FA73 /* CreateOrderViewModel.swift */; };
+		3C8111F321A153480000FA73 /* CreateOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111F121A153480000FA73 /* CreateOrderViewModel.swift */; };
+		3C8111F521A158340000FA73 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111F421A158340000FA73 /* CustomButton.swift */; };
+		3C8111F621A158340000FA73 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111F421A158340000FA73 /* CustomButton.swift */; };
+		3C8111F821A15C7E0000FA73 /* SelectDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111F721A15C7E0000FA73 /* SelectDrinkViewController.swift */; };
+		3C8111F921A15C7E0000FA73 /* SelectDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111F721A15C7E0000FA73 /* SelectDrinkViewController.swift */; };
+		3C8111FB21A15C8F0000FA73 /* SelectDrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111FA21A15C8F0000FA73 /* SelectDrinkViewModel.swift */; };
+		3C8111FC21A15C8F0000FA73 /* SelectDrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111FA21A15C8F0000FA73 /* SelectDrinkViewModel.swift */; };
+		3C8111FE21A15CA70000FA73 /* SelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111FD21A15CA70000FA73 /* SelectTableViewController.swift */; };
+		3C8111FF21A15CA70000FA73 /* SelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8111FD21A15CA70000FA73 /* SelectTableViewController.swift */; };
+		3C81120121A15CC50000FA73 /* SelectTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120021A15CC50000FA73 /* SelectTableViewModel.swift */; };
+		3C81120221A15CC50000FA73 /* SelectTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120021A15CC50000FA73 /* SelectTableViewModel.swift */; };
+		3C81120421A1799E0000FA73 /* SelectDrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120321A1799E0000FA73 /* SelectDrinkTableViewCell.swift */; };
+		3C81120521A1799E0000FA73 /* SelectDrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120321A1799E0000FA73 /* SelectDrinkTableViewCell.swift */; };
+		3C81120721A17C390000FA73 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120621A17C390000FA73 /* Drink.swift */; };
+		3C81120821A17C390000FA73 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120621A17C390000FA73 /* Drink.swift */; };
+		3C81120A21A190F50000FA73 /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120921A190F50000FA73 /* Reactive+Extension.swift */; };
+		3C81120B21A190F50000FA73 /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120921A190F50000FA73 /* Reactive+Extension.swift */; };
+		3C81120D21A19B160000FA73 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120C21A19B160000FA73 /* UIViewController+Extension.swift */; };
+		3C81120E21A19B160000FA73 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C81120C21A19B160000FA73 /* UIViewController+Extension.swift */; };
 		3CD44BF8219F4893008CA23B /* TablesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD44BF7219F4893008CA23B /* TablesListViewController.swift */; };
 		3CD44BF9219F4893008CA23B /* TablesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD44BF7219F4893008CA23B /* TablesListViewController.swift */; };
 		3CD44BFB219F4F29008CA23B /* TablesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD44BFA219F4F29008CA23B /* TablesListViewModel.swift */; };
@@ -81,7 +125,29 @@
 /* Begin PBXFileReference section */
 		1783EF9DCEE5BE6A34475449 /* Pods_CafePOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafePOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A70310186C080FF4E4121B /* Pods-CafePOSDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafePOSDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CafePOSDev/Pods-CafePOSDev.debug.xcconfig"; sourceTree = "<group>"; };
+		3C06582521A1DFBF0097D1BB /* IntrinsicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicTableView.swift; sourceTree = "<group>"; };
+		3C06D21421CFFF07005FD16A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3C1AB3D2BDC16E3102C5282B /* Pods_CafePOSDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafePOSDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C2C711921D09472003D439D /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		3C2C711C21D09855003D439D /* OrderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModel.swift; sourceTree = "<group>"; };
+		3C2C711F21D0A85B003D439D /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
+		3C2C712221D0A9A2003D439D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		3C2C712521D0D542003D439D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3C2C712821D0D54F003D439D /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		3C2C712B21D16107003D439D /* RequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStatus.swift; sourceTree = "<group>"; };
+		3C2C712E21D17D5D003D439D /* EmptyPrepareView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyPrepareView.xib; sourceTree = "<group>"; };
+		3C3197E421A2A6EE00C3DF86 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		3C8111EE21A1533B0000FA73 /* CreateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
+		3C8111F121A153480000FA73 /* CreateOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewModel.swift; sourceTree = "<group>"; };
+		3C8111F421A158340000FA73 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3C8111F721A15C7E0000FA73 /* SelectDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrinkViewController.swift; sourceTree = "<group>"; };
+		3C8111FA21A15C8F0000FA73 /* SelectDrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrinkViewModel.swift; sourceTree = "<group>"; };
+		3C8111FD21A15CA70000FA73 /* SelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewController.swift; sourceTree = "<group>"; };
+		3C81120021A15CC50000FA73 /* SelectTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewModel.swift; sourceTree = "<group>"; };
+		3C81120321A1799E0000FA73 /* SelectDrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrinkTableViewCell.swift; sourceTree = "<group>"; };
+		3C81120621A17C390000FA73 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		3C81120921A190F50000FA73 /* Reactive+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extension.swift"; sourceTree = "<group>"; };
+		3C81120C21A19B160000FA73 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		3CD44BF7219F4893008CA23B /* TablesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListViewController.swift; sourceTree = "<group>"; };
 		3CD44BFA219F4F29008CA23B /* TablesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListViewModel.swift; sourceTree = "<group>"; };
 		3CD44BFE219FCA7D008CA23B /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
@@ -164,6 +230,11 @@
 			isa = PBXGroup;
 			children = (
 				3CD44BFA219F4F29008CA23B /* TablesListViewModel.swift */,
+				3C8111F121A153480000FA73 /* CreateOrderViewModel.swift */,
+				3C8111FA21A15C8F0000FA73 /* SelectDrinkViewModel.swift */,
+				3C81120021A15CC50000FA73 /* SelectTableViewModel.swift */,
+				3C2C711C21D09855003D439D /* OrderDetailViewModel.swift */,
+				3C2C712821D0D54F003D439D /* TableViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,6 +243,12 @@
 			isa = PBXGroup;
 			children = (
 				3CD44BF7219F4893008CA23B /* TablesListViewController.swift */,
+				3C8111EE21A1533B0000FA73 /* CreateOrderViewController.swift */,
+				3C8111F721A15C7E0000FA73 /* SelectDrinkViewController.swift */,
+				3C8111FD21A15CA70000FA73 /* SelectTableViewController.swift */,
+				3C06D21421CFFF07005FD16A /* LoginViewController.swift */,
+				3C2C711921D09472003D439D /* OrderDetailViewController.swift */,
+				3C2C712521D0D542003D439D /* TableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,6 +257,11 @@
 			isa = PBXGroup;
 			children = (
 				3CD583ED21A05E2E0011EB02 /* TableCollectionViewCell.swift */,
+				3C8111F421A158340000FA73 /* CustomButton.swift */,
+				3C81120321A1799E0000FA73 /* SelectDrinkTableViewCell.swift */,
+				3C06582521A1DFBF0097D1BB /* IntrinsicTableView.swift */,
+				3C3197E421A2A6EE00C3DF86 /* OrderTableViewCell.swift */,
+				3C2C712E21D17D5D003D439D /* EmptyPrepareView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +270,10 @@
 			isa = PBXGroup;
 			children = (
 				3CD583EA21A056CE0011EB02 /* Table.swift */,
+				3C81120621A17C390000FA73 /* Drink.swift */,
+				3C2C711F21D0A85B003D439D /* OrderDetail.swift */,
+				3C2C712221D0A9A2003D439D /* Order.swift */,
+				3C2C712B21D16107003D439D /* RequestStatus.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,6 +348,8 @@
 				4C04CFD120EC7C0F003A7C68 /* UIViewController+Alert.swift */,
 				4C04CFDA20EC7E13003A7C68 /* Error+Extension.swift */,
 				4C04CFDE20EC7FCB003A7C68 /* RxSwift+Extension.swift */,
+				3C81120921A190F50000FA73 /* Reactive+Extension.swift */,
+				3C81120C21A19B160000FA73 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -393,6 +481,7 @@
 			files = (
 				4C04CFA320EC74C6003A7C68 /* LaunchScreen.storyboard in Resources */,
 				4C04CFA020EC74C6003A7C68 /* Assets.xcassets in Resources */,
+				3C2C712F21D17D5D003D439D /* EmptyPrepareView.xib in Resources */,
 				4C04CF9E20EC74C2003A7C68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +499,7 @@
 			files = (
 				4C04D02C20EC8CEE003A7C68 /* LaunchScreen.storyboard in Resources */,
 				4C04D02D20EC8CEE003A7C68 /* Assets.xcassets in Resources */,
+				3C2C713021D17D5D003D439D /* EmptyPrepareView.xib in Resources */,
 				4C04D02E20EC8CEE003A7C68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +533,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CafePOSTests/Pods-CafePOSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -458,6 +549,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -483,6 +575,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CafePOS/Pods-CafePOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -498,6 +591,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -523,6 +617,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CafePOSDev/Pods-CafePOSDev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -538,6 +633,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -598,8 +694,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2C712021D0A85B003D439D /* OrderDetail.swift in Sources */,
 				4C04CFE320EC808D003A7C68 /* APIEngine.swift in Sources */,
+				3C8111F221A153480000FA73 /* CreateOrderViewModel.swift in Sources */,
 				3CD44BFB219F4F29008CA23B /* TablesListViewModel.swift in Sources */,
+				3C8111FB21A15C8F0000FA73 /* SelectDrinkViewModel.swift in Sources */,
+				3C81120D21A19B160000FA73 /* UIViewController+Extension.swift in Sources */,
 				4C04CFD220EC7C0F003A7C68 /* UIViewController+Alert.swift in Sources */,
 				4C04CFD820EC7D11003A7C68 /* APIEndpoint.swift in Sources */,
 				4C04CFCF20EC7B48003A7C68 /* String+Extension.swift in Sources */,
@@ -607,15 +707,32 @@
 				4C04CFC620EC79FC003A7C68 /* UIImageView+Kingfishser.swift in Sources */,
 				3CD44BF8219F4893008CA23B /* TablesListViewController.swift in Sources */,
 				4C04CFCC20EC7ADF003A7C68 /* UIView+Extension.swift in Sources */,
+				3C06D21521CFFF07005FD16A /* LoginViewController.swift in Sources */,
 				4C04CFC320EC78AD003A7C68 /* NSObject+Extension.swift in Sources */,
+				3C2C712921D0D54F003D439D /* TableViewModel.swift in Sources */,
+				3C8111F521A158340000FA73 /* CustomButton.swift in Sources */,
+				3C2C711A21D09472003D439D /* OrderDetailViewController.swift in Sources */,
 				4C04CFBD20EC7811003A7C68 /* UIColor+Extension.swift in Sources */,
+				3C06582621A1DFBF0097D1BB /* IntrinsicTableView.swift in Sources */,
+				3C81120421A1799E0000FA73 /* SelectDrinkTableViewCell.swift in Sources */,
+				3C8111EF21A1533B0000FA73 /* CreateOrderViewController.swift in Sources */,
 				3CD44BFF219FCA7D008CA23B /* NetworkAdapter.swift in Sources */,
 				4C04CFDF20EC7FCB003A7C68 /* RxSwift+Extension.swift in Sources */,
+				3C8111FE21A15CA70000FA73 /* SelectTableViewController.swift in Sources */,
+				3C2C712C21D16107003D439D /* RequestStatus.swift in Sources */,
+				3C81120721A17C390000FA73 /* Drink.swift in Sources */,
 				3CD583EB21A056CE0011EB02 /* Table.swift in Sources */,
 				4C04CFC920EC7AAA003A7C68 /* UISearchBar+Extension.swift in Sources */,
+				3C81120A21A190F50000FA73 /* Reactive+Extension.swift in Sources */,
+				3C3197E521A2A6EE00C3DF86 /* OrderTableViewCell.swift in Sources */,
+				3C2C712621D0D542003D439D /* TableViewController.swift in Sources */,
 				4C04CF9920EC74C2003A7C68 /* AppDelegate.swift in Sources */,
+				3C2C712321D0A9A2003D439D /* Order.swift in Sources */,
 				4C04CFDB20EC7E13003A7C68 /* Error+Extension.swift in Sources */,
+				3C2C711D21D09855003D439D /* OrderDetailViewModel.swift in Sources */,
 				4C04CFD520EC7CFC003A7C68 /* Const.swift in Sources */,
+				3C81120121A15CC50000FA73 /* SelectTableViewModel.swift in Sources */,
+				3C8111F821A15C7E0000FA73 /* SelectDrinkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,8 +760,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2C712121D0A85B003D439D /* OrderDetail.swift in Sources */,
 				4C04D01B20EC8CEE003A7C68 /* APIEngine.swift in Sources */,
+				3C8111F321A153480000FA73 /* CreateOrderViewModel.swift in Sources */,
 				3CD44BFC219F4F29008CA23B /* TablesListViewModel.swift in Sources */,
+				3C8111FC21A15C8F0000FA73 /* SelectDrinkViewModel.swift in Sources */,
+				3C81120E21A19B160000FA73 /* UIViewController+Extension.swift in Sources */,
 				4C04D01C20EC8CEE003A7C68 /* UIViewController+Alert.swift in Sources */,
 				4C04D01D20EC8CEE003A7C68 /* APIEndpoint.swift in Sources */,
 				4C04D01E20EC8CEE003A7C68 /* String+Extension.swift in Sources */,
@@ -652,15 +773,32 @@
 				4C04D01F20EC8CEE003A7C68 /* UIImageView+Kingfishser.swift in Sources */,
 				3CD44BF9219F4893008CA23B /* TablesListViewController.swift in Sources */,
 				4C04D02020EC8CEE003A7C68 /* UIView+Extension.swift in Sources */,
+				3C06D21621CFFF07005FD16A /* LoginViewController.swift in Sources */,
 				4C04D02120EC8CEE003A7C68 /* NSObject+Extension.swift in Sources */,
+				3C2C712A21D0D54F003D439D /* TableViewModel.swift in Sources */,
+				3C8111F621A158340000FA73 /* CustomButton.swift in Sources */,
+				3C2C711B21D09472003D439D /* OrderDetailViewController.swift in Sources */,
 				4C04D02220EC8CEE003A7C68 /* UIColor+Extension.swift in Sources */,
+				3C06582721A1DFBF0097D1BB /* IntrinsicTableView.swift in Sources */,
+				3C81120521A1799E0000FA73 /* SelectDrinkTableViewCell.swift in Sources */,
+				3C8111F021A1533B0000FA73 /* CreateOrderViewController.swift in Sources */,
 				3CD44C00219FCA7D008CA23B /* NetworkAdapter.swift in Sources */,
 				4C04D02320EC8CEE003A7C68 /* RxSwift+Extension.swift in Sources */,
+				3C8111FF21A15CA70000FA73 /* SelectTableViewController.swift in Sources */,
+				3C2C712D21D16107003D439D /* RequestStatus.swift in Sources */,
+				3C81120821A17C390000FA73 /* Drink.swift in Sources */,
 				3CD583EC21A056CE0011EB02 /* Table.swift in Sources */,
 				4C04D02420EC8CEE003A7C68 /* UISearchBar+Extension.swift in Sources */,
+				3C81120B21A190F50000FA73 /* Reactive+Extension.swift in Sources */,
+				3C3197E621A2A6EE00C3DF86 /* OrderTableViewCell.swift in Sources */,
+				3C2C712721D0D542003D439D /* TableViewController.swift in Sources */,
 				4C04D02620EC8CEE003A7C68 /* AppDelegate.swift in Sources */,
+				3C2C712421D0A9A2003D439D /* Order.swift in Sources */,
 				4C04D02720EC8CEE003A7C68 /* Error+Extension.swift in Sources */,
+				3C2C711E21D09855003D439D /* OrderDetailViewModel.swift in Sources */,
 				4C04D02820EC8CEE003A7C68 /* Const.swift in Sources */,
+				3C81120221A15CC50000FA73 /* SelectTableViewModel.swift in Sources */,
+				3C8111F921A15C7E0000FA73 /* SelectDrinkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,8 +953,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = 5EMC6RK8V9;
 				INFOPLIST_FILE = CafePOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -835,8 +974,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = 5EMC6RK8V9;
 				INFOPLIST_FILE = CafePOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

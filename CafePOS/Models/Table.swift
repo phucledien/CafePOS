@@ -6,16 +6,38 @@
 //  Copyright © 2018 Dwarvesv. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
 
-struct Table {
-    var name: String
-    var status: TableStatus
-    var payment: Int
+struct Tables: Mappable {
+    var tables: [Table] = []
     
-    init(name: String, status: TableStatus, payment: Int) {
-        self.name = name
-        self.status = status
-        self.payment = payment
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        self.tables <- map ["tables"]
+    }
+}
+
+struct Table: Mappable {
+    var id: String!
+    var name: String!
+    var status: TableStatus!
+    var orders: [Order] = []
+    
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        self.id     <- map["id"]
+        self.name   <- map["name"]
+        self.status <- map["status"]
+        self.orders <- map["orders"]
+        self.id     <- map["table.id"]
+        self.name   <- map["table.name"]
+        self.status <- map["table.status"]
+        self.orders <- map["table.orders"]
     }
 }

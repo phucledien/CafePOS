@@ -30,6 +30,10 @@ def app_pods
     
     #Ayto scroll view when keyboard appeared
     pod 'IQKeyboardManagerSwift'
+
+	#Checkbox
+	pod 'BEMCheckBox'
+
     
 end
 

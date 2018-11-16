@@ -10,8 +10,8 @@ import Foundation
 
 class APIEndpoint {
     #if DEVELOPMENT
-    public static let baseURL: String = "https://dev.com"
+    public static let baseURL: String = "http://localhost:3000/"
     #else //Production
-    public static let baseURL: String = "https://production.com"
+    public static let baseURL: String = "http://localhost:3000/"
     #endif
 }

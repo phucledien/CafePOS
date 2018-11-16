@@ -24,7 +24,7 @@ protocol TablesListViewModelOuputs {
     // {Alphabetized list of output signals with documentation}
     
     /// Emit fetch data success or not
-    func fetchData() -> Observable<Bool>
+    func fetchData() -> Observable<Void>
     
     /// Emit the filtered tables
     var filteredTables: BehaviorRelay<[TablesListSection]> {get}
@@ -47,13 +47,13 @@ class TablesListViewModel: TablesListViewModelType, TablesListViewModelInputs, T
     }
     
     // MARK : - Outputs
-    func fetchData() -> Observable<Bool> {
+    func fetchData() -> Observable<Void> {
         return NetworkAdapter.getTables()
             .do(onNext: { [weak self] tables in
                 guard let strongSelf = self else {return}
-                strongSelf.tables.accept(tables)
+                strongSelf.tables.accept(tables.tables)
             })
-            .map { _ in true }
+            .map { _ in return Observable.of(()) }
     }
     
     var filteredTables: BehaviorRelay<[TablesListSection]> = BehaviorRelay(value: [])
@@ -61,7 +61,7 @@ class TablesListViewModel: TablesListViewModelType, TablesListViewModelInputs, T
     // MARK:- Other methods
     func createSection(withTables: [Table]) -> [TablesListSection] {
         let items = withTables.map { table in
-            return TablesListCellItem(id: "0", name: table.name, payment: "\(table.payment)đ", status: table.status)
+            return TablesListCellItem(id: table.id, name: table.name, payment: "0đ", status: table.status)
         }
         return [TablesListSection(items: items)]
     }
@@ -93,10 +93,10 @@ class TablesListViewModel: TablesListViewModelType, TablesListViewModelInputs, T
 
 // RxDatasource adapter
 
-enum TableStatus {
-    case Empty
-    case Ordered
-    case Prepared
+enum TableStatus: Int {
+    case Empty = 0
+    case Preparing = 1
+    case Ordered = 2
 }
 
 struct TablesListCellItem {
@@ -109,7 +109,7 @@ struct TablesListCellItem {
 extension TablesListCellItem: IdentifiableType {
     typealias Identity = String
     
-    var identity: String { return name }
+    var identity: String { return id }
 }
 
 extension TablesListCellItem: Equatable {}

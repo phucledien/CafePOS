@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import ObjectMapper
 
 class NetworkAdapter {
     class func noneAuthenticateHeader() -> [String:String] {
@@ -17,19 +18,53 @@ class NetworkAdapter {
     }
 }
 
-// Table
+// MARK: - Table
 extension NetworkAdapter {
-    class func getTables() -> Observable<[Table]> {
-        let items = [
-            Table(name: "Bàn 1", status: .Empty, payment: 200000),
-            Table(name: "Bàn 2", status: .Ordered, payment: 170000),
-            Table(name: "Bàn 3", status: .Ordered, payment: 130000),
-            Table(name: "Bàn 4", status: .Prepared, payment: 150000),
-            Table(name: "Bàn 5", status: .Empty, payment: 250000),
-            Table(name: "Bàn 6", status: .Prepared, payment: 100000),
-            ]
-//        return Observable.error(NetworkError.Error(message: "Cannot fetch tables"))
-        return Observable.of(items)
+    class func getTables() -> Observable<Tables> {
+        let URL = APIEndpoint.baseURL + "tables"
+        return APIEngine.queryData(method: .get, url: URL, parameters: nil, header: noneAuthenticateHeader())
+    }
+    
+    class func getTable(tableID: String) -> Observable<Table> {
+        let URL = APIEndpoint.baseURL + "tables/" + tableID
+        return APIEngine.queryData(method: .get, url: URL, parameters: nil, header: noneAuthenticateHeader())
+    }
+    
+    class func getEmptyTables() -> Observable<Tables> {
+        let URL = APIEndpoint.baseURL + "tables/empty"
+        return APIEngine.queryData(method: .get, url: URL, parameters: nil, header: noneAuthenticateHeader())
+    }
+    
+    class func getPreparingTables() -> Observable<Tables> {
+        let URL = APIEndpoint.baseURL + "tables/preparing"
+        return APIEngine.queryData(method: .get, url: URL, parameters: nil, header: noneAuthenticateHeader())
+    }
+    
+    class func updateStatus(tableID: String, status: Int) -> Observable<RequestResult> {
+        let URL = APIEndpoint.baseURL + "tables/\(tableID)/status"
+        let params = ["status": status]
+        return APIEngine.queryData(method: .put, url: URL, parameters: params, header: noneAuthenticateHeader())
     }
 }
 
+// MARK: - Drink
+extension NetworkAdapter {
+    class func getDrinks() -> Observable<Drinks> {
+        let URL = APIEndpoint.baseURL + "drinks"
+        return APIEngine.queryData(method: .get, url: URL, parameters: nil, header: noneAuthenticateHeader())
+    }
+}
+
+// MARK: - Order
+extension NetworkAdapter{
+    class func createOrder(tableID: String, orderDetails: [OrderDetail]) -> Observable<Order> {
+        let URL = APIEndpoint.baseURL + "orders"
+        let orderDetailsJson = Mapper().toJSONArray(orderDetails)
+        let  params = ["order":[
+            "table_id": tableID,
+            "order_details": orderDetailsJson
+        ]]
+        return APIEngine.queryData(method: .post, url: URL, parameters: params, header: noneAuthenticateHeader())
+
+    }
+}

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - BEMCheckBox (1.4.1)
   - Differentiator (3.1.0)
   - IQKeyboardManagerSwift (6.2.0)
   - Kingfisher (4.10.1)
@@ -23,6 +24,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - BEMCheckBox
   - IQKeyboardManagerSwift
   - Kingfisher
   - ObjectMapper
@@ -36,6 +38,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - BEMCheckBox
     - Differentiator
     - IQKeyboardManagerSwift
     - Kingfisher
@@ -50,6 +53,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
@@ -62,6 +66,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 6b74749a667771b94d9c23dc23c4ea3347e5946c
+PODFILE CHECKSUM: 63156e21fdc76202d5084422c6f631e2368233af
 
 COCOAPODS: 1.5.3
