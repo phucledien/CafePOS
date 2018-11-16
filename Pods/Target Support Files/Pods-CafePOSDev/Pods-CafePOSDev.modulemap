@@ -1,0 +1,6 @@
+framework module Pods_CafePOSDev {
+  umbrella header "Pods-CafePOSDev-umbrella.h"
+
+  export *
+  module * { export * }
+}
