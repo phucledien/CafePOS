@@ -24,6 +24,7 @@ class TablesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboard()
         viewModel.inputs.viewDidLoad()
         setupCollectionView()
         fetchData()
@@ -52,11 +53,20 @@ class TablesListViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        switch segue.identifier {
+//        case Segues.ToCreateOrder:
+//            let createOrderVC = segue.destination as! CreateOrderViewController
+//        default:
+//            return
+//        }
+//    }
+    
     private func fetchData() {
         SVProgressHUD.show()
         viewModel.outputs.fetchData()
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { _ in
+            .subscribe(onNext: {
                 SVProgressHUD.dismiss()
             }, onError: { [weak self] error in
                 SVProgressHUD.dismiss()

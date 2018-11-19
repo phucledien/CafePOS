@@ -9,11 +9,13 @@
 import Foundation
 
 struct Table {
+    var id: String
     var name: String
     var status: TableStatus
     var payment: Int
     
-    init(name: String, status: TableStatus, payment: Int) {
+    init(id: String, name: String, status: TableStatus, payment: Int) {
+        self.id = id
         self.name = name
         self.status = status
         self.payment = payment

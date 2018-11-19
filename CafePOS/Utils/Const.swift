@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+enum Segues {
+    static let ToCreateOrder = "to_create_order"
+    static let ToSelectTable = "to_select_table"
+    static let ToSelectDrink = "to_select_drink"
+}
